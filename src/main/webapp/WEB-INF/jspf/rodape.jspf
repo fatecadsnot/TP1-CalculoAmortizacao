@@ -1,0 +1,6 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<hr/>
+<footer>
+    Todos direitos reservado ©Grupo02.Ltda | Contato <a href="fatecadsnot@gmail.com">E-Mail</a>
+</footer>
