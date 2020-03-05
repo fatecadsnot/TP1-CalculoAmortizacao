@@ -14,7 +14,15 @@
     <body>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
         
-        <h4>Integrantes: Guilherme Roberto Torato <br>
+        <h4>Integrantes: 
+            <ul>
+                <li>Gabriel Fernandes Bento</li>
+                <li>Guilherme Roberto Torato</li>
+                <li>Iego Aguiar Ribeiro</li>
+                <li>Vinicius Teodosio Alves</li>
+                <li>Wagner de Almeida</li>
+                <li>Wesley Ramos Neres Santiago</li>
+             </ul>  
             Ciclo: 4º<br>
             Turma: Noite <br>
             Matéria: Programçao Orientada Objeto(POO)
