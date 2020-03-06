@@ -9,16 +9,66 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="style.css" rel="stylesheet" type="text/css" />
+
         <title>Tabela Price</title>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
+        
     </head>
     <body>
-      <h1><center>Tabela Price</center></h1><br/>
-      <p>Tabela Price, também chamado de sistema francês de amortização, é um método usado em amortização de empréstimo cuja principal característica é apresentar prestações (ou parcelas) iguais.</p>
-      <p>A tabela Price usa o regime de juros compostos para calcular o valor das parcelas de um empréstimo e, dessa parcela, há uma proporção relativa ao pagamento de juros e amortização do valor emprestado.</p>
-      <img src="./formulaPrice.jpg" alt="Formula do cálculo de amortização PRICE">
+      <div align="center">
+        <h1>Tabela Price</h1>
+        <p>Tabela Price, também chamado de sistema francês de amortização, é um método usado em amortização de empréstimo cuja principal característica é apresentar prestações (ou parcelas) iguais.</p>
+        <p>A tabela Price usa o regime de juros compostos para calcular o valor das parcelas de um empréstimo e, dessa parcela, há uma proporção relativa ao pagamento de juros e amortização do valor emprestado.</p>
+        <br/>
+        <img id="imgPrice" src="./formulaPrice.jpg" alt="Formula do cálculo de amortização PRICE">
+      </div>
+      
+      <br/>
       <hr/>
-     
+      <br/>
+    
+      <table id="entradaDados">
+        <tr>
+          <td><label for="valorFinanciado">Valor Financiado: <input type="number" name="Valor Financiado" id="valorFinanciado"></label></td>
+          <td><label for="prazo">Prazo (m): <input type="number" name="Prazo" id="prazo"></label></td>
+          <td><label for="Taxa de juros">Taxa de Juros mensal (%): <input type="number" name="Juros" id="juros"></label></td>
+        </tr>
+      </table>
+            
+      <br/>
+
+      <table id="tabelaPrice">
+        <% int i=1; %>
+        <tr>
+          <th>#</th>
+          <th>Parcelas</th>
+          <th>Amortizações</th>
+          <th>Juros</th>
+          <th>Saldo Devedor</th>
+        </tr>
+
+        <tr>
+          <td><%= i %></td>
+          <td><%= i %></td>
+          <td><%= i %></td>
+          <td><%= i %></td>
+          <td><%= i %></td>
+        </tr>
+
+        <tr>
+          <td>Totais</td>
+          <td><%= i %></td>
+          <td><%= i %></td>
+          <td><%= i %></td>
+          <td><%= i %></td>
+        </tr>
+
+      </table>
+    
+      
+
+
     </body>
 
     <footer>
