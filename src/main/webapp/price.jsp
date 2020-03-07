@@ -33,13 +33,14 @@
           <td><label for="valorFinanciado">Valor Financiado: <input type="number" name="Valor Financiado" id="valorFinanciado"></label></td>
           <td><label for="prazo">Prazo (m): <input type="number" name="Prazo" id="prazo"></label></td>
           <td><label for="Taxa de juros">Taxa de Juros mensal (%): <input type="number" name="Juros" id="juros"></label></td>
+          <td><input type="submit" name="calcular" value="calcular"></td>
         </tr>
       </table>
             
       <br/>
 
       <table id="tabelaPrice">
-        <% int i=1; %>
+       
         <tr>
           <th>#</th>
           <th>Parcelas</th>
@@ -48,13 +49,25 @@
           <th>Saldo Devedor</th>
         </tr>
 
-        <tr>
-          <td><%= i %></td>
-          <td><%= i %></td>
-          <td><%= i %></td>
-          <td><%= i %></td>
-          <td><%= i %></td>
-        </tr>
+        <% int i = 0; %>
+
+        <!-- <% if(request.getParameter("calcular")!=null){ %>          
+          <% double valorFinanciado = Double.valueOf(request.getParameter("valorFinanciado")); %>
+          <% double prazo = Double.valueOf(request.getParameter("prazo")); %>
+          <% double juros = Double.valueOf(request.getParameter("juros")); %>
+
+          <% for ( i=0; i < prazo; i++) { %> -->
+      
+                <tr>               
+                  <td><%= i %></td>
+                  <td><%= i %></td>
+                  <td><%= i %></td>
+                  <td><%= i %></td>
+                  <td><%= i %></td>
+                </tr>
+          <!-- <% }%>
+        <% }%> -->
+        
 
         <tr>
           <td>Totais</td>
