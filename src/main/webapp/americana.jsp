@@ -131,4 +131,7 @@
             </div>
         </div>
     </body>
+    <footer>
+      <%@include file="WEB-INF/jspf/rodape.jspf" %>
+    </footer>
 </html>
