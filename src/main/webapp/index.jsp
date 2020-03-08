@@ -19,7 +19,7 @@
                 <li>Gabriel Fernandes Bento</li>
                 <li>Guilherme Roberto Torato</li>
                 <li>Iego Aguiar Ribeiro</li>
-                <li>Vinicius Teodosio Alves</li>
+                <li>Vinícius Teodosio Alves</li>
                 <li>Wagner de Almeida</li>
                 <li>Wesley Ramos Neres Santiago</li>
              </ul>  
