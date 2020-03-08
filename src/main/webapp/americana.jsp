@@ -10,7 +10,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!--<link href="style.css" rel="stylesheet" type="text/css" />-->
+        
         <title>Amortização americana</title>
+        <%@include file="WEB-INF/jspf/menu.jspf" %>
     </head>
     <body>
         <h1>Simulação da amortização americana</h1>
@@ -102,4 +105,7 @@
         
         <%}%> 
     </body>
+    <footer>
+      <%@include file="WEB-INF/jspf/rodape.jspf" %>
+    </footer>
 </html>
