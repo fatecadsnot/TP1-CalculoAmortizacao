@@ -2,5 +2,5 @@
 <%@ page pageEncoding="UTF-8" %>
 <hr/>
 <footer>
-    Todos direitos reservado ©Grupo02.Ltda | Contato <a href="fatecadsnot@gmail.com">E-Mail</a>
+    Todos os direitos reservados ©Grupo02.Ltda | <a href="https://github.com/fatecadsnot/TP1-CalculoAmortizacao" target="_blank" >Projeto no GitHub</a>
 </footer>
