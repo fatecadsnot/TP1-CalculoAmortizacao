@@ -90,7 +90,7 @@
                             <td><%--Coluna dos juros --%>
                                 <% if(i == 0){%>0 <%} else if(i < parcela +1){ %>
                                 <%parcelas = (divida/100)*taxa;%>
-                                <%=parcelas %> %
+                                <%=parcelas %>
                                 <% montante = montante + parcelas;%>
                                 <% }else{ %> ----- 
                                 <% }%>
