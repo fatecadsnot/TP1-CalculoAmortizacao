@@ -31,18 +31,22 @@
                     <%if (request.getParameter("enviar") == null) {  %><%-- Esta estrutura condicional verifica o input submit do formulário tem algum valor, caso seja null, o formulário é aberto para receber valores.--%>
 
                     <form> <%--Estrutura do formulário com os campos necessários para executar o cálculo --%>
-                        <div>
+                        <div class="marginEntradaDados">
                             <label><b> Valor do empréstimo </b></label><br/>
                             <input type="number" class="form-control" name="valorDivida" required="" />
-                                    </div>
-                        <div><label><b> Parcelas </b></label><br/>
-                                    <input type="number" class="form-control" name="parcelaDivida" required="" />
-                                    </div>
-                        <div><label><b> Taxa de Juros </b></label><br/> 
-                                    <input type="number" class="form-control" name="taxaDivida" step="0.01" required="" />
-                                    </div>
-                        <br/>
-                        <div><input type="submit" class="btn btn-primary float-right" name="enviar" value="Enviar"/>
+                        </div>
+                        <div class="marginEntradaDados">
+                            <label><b> Parcelas </b></label><br/>
+                            <input type="number" class="form-control" name="parcelaDivida" required="" />
+                        </div>
+                        <div class="marginEntradaDados">
+                            <label><b> Taxa de Juros </b></label><br/> 
+                            <input type="number" class="form-control" name="taxaDivida" step="0.01" required="" />
+                        </div>
+                        <div>
+                            <br/>
+                            <input type="submit" class="btn btn-primary float-right" name="enviar" value="Enviar"/>
+                        </div>
                     </form>
 
                     <% } else { %>

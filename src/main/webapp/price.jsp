@@ -39,20 +39,22 @@
                     <%if (request.getParameter("enviar") == null) {  %>
 
                     <form>
-                        <div>
+                        <div class="marginEntradaDados">
                             <label><b> Valor do empréstimo </b></label><br/> 
                             <input type="number" class="form-control" name="valorFinanciadoInput" placeholder="Valor em reais (R$) Ex.: 1000" required />
                         </div>
-                        <div>
+                        <div class="marginEntradaDados">
                             <label><b> Parcelas </b></label><br/> 
                             <input type="number" class="form-control" name="prazoInput" placeholder="Prazo em meses (m) Ex.: 12" required />
                         </div>
-                        <div>
+                        <div class="marginEntradaDados">
                             <label><b> Taxa de Juros </b></label><br/> 
                             <input type="number" class="form-control" name="txJurosInput" placeholder="Taxa por cento (%): Ex.: 5" required />
                         </div>
-                        <br/>
-                        <input type="submit" class="btn btn-primary float-right" name="enviar" value="Enviar"/>
+                        <div>
+                            <br/>
+                            <input type="submit" class="btn btn-primary float-right" name="enviar" value="Enviar"/>
+                        </div>
                     </form>
 
                     <% } else { %>
